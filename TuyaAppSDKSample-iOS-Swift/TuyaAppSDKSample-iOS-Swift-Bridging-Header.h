@@ -9,5 +9,7 @@
 
 #import <SVProgressHUD/SVProgressHUD.h>
 #import <SGQRCode/SGQRCode.h>
-
+#import <ThingSmartHomeKit/ThingSmartKit.h>
+#import <ThingSmartSweeperKit/ThingSmartSweeperKit.h>
+#import <ThingSmartMiniAppBizBundle/ThingSmartMiniAppBizBundle.h>
 #endif /* ThingAppSDKSample_iOS_Swift_Bridging_Header_h */

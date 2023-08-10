@@ -6,6 +6,7 @@
 
 import UIKit
 import ThingSmartBaseKit
+import ThingSmartMiniAppBizBundle
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Initialize ThingSmartSDK
         ThingSmartSDK.sharedInstance().start(withAppKey: AppKey.appKey, secretKey: AppKey.secretKey)
-        
+        ThingMiniAppClient.initialClient().initialize()
+        ThingMiniAppClient.debugClient().vConsoleDebugEnable(true)
         // Enable debug mode, which allows you to see logs.
         #if DEBUG
         ThingSmartSDK.sharedInstance().debugMode = true

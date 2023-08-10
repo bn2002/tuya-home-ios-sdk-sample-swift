@@ -1,0 +1,12 @@
+{
+    "config": {
+        "appId": 586570082,
+        "thingAppKey": "k5hqsykepsv7xuycauts",
+        "appScheme": "ohtestpanel",
+        "hotspotPrefixs": ["SmartLife"],
+        "needBle": true
+    },
+   "colors":{
+        "themeColor": "#FF5A28",
+    }
+}

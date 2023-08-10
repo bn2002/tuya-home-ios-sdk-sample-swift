@@ -76,6 +76,8 @@
 
 /* Begin PBXFileReference section */
 		207E8BAF216CF8ED00C5937A /* Pods-TuyaAppSDKSample-iOS-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuyaAppSDKSample-iOS-Swift.release.xcconfig"; path = "Target Support Files/Pods-TuyaAppSDKSample-iOS-Swift/Pods-TuyaAppSDKSample-iOS-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		44B44FCE2A83508F007F8569 /* thing_custom_config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = thing_custom_config.json; sourceTree = "<group>"; };
+		44B44FCF2A837080007F8569 /* deviceDetailConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = deviceDetailConfig.json; sourceTree = "<group>"; };
 		6719AB9028A202B5000588E7 /* TextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewTableViewCell.swift; sourceTree = "<group>"; };
 		6719AB9228A208CB000588E7 /* TuyaLinkDeviceControlController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuyaLinkDeviceControlController.swift; sourceTree = "<group>"; };
 		6719AB9428A208DF000588E7 /* TuyaLinkActionMsgSendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuyaLinkActionMsgSendController.swift; sourceTree = "<group>"; };
@@ -244,6 +246,8 @@
 				AF60B8C325BEBA1600E18F6F /* Localizable.strings */,
 				AF60B8C025BEBA1600E18F6F /* InfoPlist.strings */,
 				6795618F289A55C000BD0FAB /* TuyaAppSDKSample-iOS-Swift-Bridging-Header.h */,
+				44B44FCE2A83508F007F8569 /* thing_custom_config.json */,
+				44B44FCF2A837080007F8569 /* deviceDetailConfig.json */,
 			);
 			path = "TuyaAppSDKSample-iOS-Swift";
 			sourceTree = "<group>";
@@ -853,8 +857,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94JFPTRDN5;
+				DEVELOPMENT_TEAM = 6BA588Z4PT;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -880,8 +885,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.thingclips.test1001;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bn2002.smh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TuyaAppSDKSample-iOS-Swift/TuyaAppSDKSample-iOS-Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -897,8 +903,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94JFPTRDN5;
+				DEVELOPMENT_TEAM = 6BA588Z4PT;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -924,8 +931,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.thingclips.test1001;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bn2002.smh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TuyaAppSDKSample-iOS-Swift/TuyaAppSDKSample-iOS-Swift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -6,6 +6,14 @@
 
 import UIKit
 import ThingSmartDeviceKit
+import ThingSmartBizCore
+import ThingModuleServices
+import ThingSmartHomeKit
+import ThingSmartPanelBizBundle
+import ThingSmartFamilyBizBundle
+import ThingSmartDeviceDetailBizBundle
+import ThingSmartMiniAppBizBundle
+import ThingSmartSweeperKit
 
 class DeviceListTableViewController: UITableViewController {
     // MARK: - Property
@@ -91,8 +99,24 @@ class DeviceListTableViewController: UITableViewController {
     }
     
     private func jumpNormalDeviceControl(_ vc: DeviceControlTableViewController, device: ThingSmartDevice) {
-        vc.device = device
-        navigationController?.pushViewController(vc, animated: true)
+        //vc.device = device
+        let impl = ThingSmartBizCore.sharedInstance().service(of: ThingPanelProtocol.self) as? ThingPanelProtocol
+        let deviceModel = device.deviceModel
+        
+        //The first way
+//        impl?.cleanPanelCache()
+//        impl?.getPanelViewController(with: deviceModel, initialProps: nil, contextProps: nil, completionHandler: {[weak self] (vc, err) in
+//            guard let vc = vc, let self = `self` else  { return }
+//
+//            self.navigationController?.pushViewController(vc, animated: true)
+//
+//        })
+        
+        // second way
+        ThingMiniAppClient.coreClient().openMiniApp(byAppId: "tyhnrpw7ngfvpq6jnj")
+        //ThingMiniAppClient.coreClient().openMiniApp(byQrcode: "tuyaSmart--miniApp?url=godzilla://tyhnrpw7ngfvpq6jnj")
+        
+        
     }
 
 }

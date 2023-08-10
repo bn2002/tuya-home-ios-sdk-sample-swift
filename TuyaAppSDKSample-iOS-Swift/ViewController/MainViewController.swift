@@ -5,7 +5,7 @@
 //  Copyright (c) 2014-2021 Thing Inc. (https://developer.tuya.com/)
 
 import UIKit
-
+import ThingModuleServices
 class MainViewController: UIViewController {
     
     // MARK: - IBOutlet
